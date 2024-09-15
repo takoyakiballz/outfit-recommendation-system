@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Import TensowFlowJS -->
+    <script src='https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest'></script>
+    <!-- Import TensowFlowJS Visualization Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+    <title>React App</title>
+</head>
+<body>
+    <canvas id='canvas' width='280' height='280'></canvas> 
+        <!-- 
+            Img element to store the drawed image 
+            This element cannot be seen by the user
+        -->
+        <img id='canvasimg' >
+
+        <input type='button' value='Classify' id='submit' size='48' >
+        <input type='button' value='Clear' id='clear' size='48' >
+
+        <!-- Import fashion mnist data preparation script -->
+        <script src='data.js' type='module'></script>
+        <!-- Import fashion mnist convolutional neural network -->
+        <script src='script.js' type='module'></script>
+
+    
+</body>
+</html>
